@@ -270,7 +270,7 @@ utils = (function () {
             programm.title = programms[i].title;
             programm.appendChild(programmText);
             programm.dataChannelId = programms[i].channel_id;
-            programm.dataDescription = programms[i].title+"\n"+"время, "+programms[i].program.country.title+", "+programms[i].program.genres[0].title+"\n" +programms[i].program.description;
+            programm.dataDescription = programms[i].title+"\n"+", "+programms[i].program.country.title+", "+programms[i].program.genres[0].title+"\n" +programms[i].program.description;
             programm.onclick = function (event) {
                 return onProgrammClick(event, this);
             };
